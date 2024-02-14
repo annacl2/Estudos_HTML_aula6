@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitinhas deli deli</title>
+</head>
+<body>
+    <h1> Receitas de Lasanhas por Anna Clara </h1>
+    <h3> Venha aprender como fazer lasanhas super simples e deliciosas!</h3>
+    <h2><u> Ingredientes </u></h2>
+    <!--Lista não ordenada-->
+    <ul type = "square">
+        <li> 3 caixinhas de Molho de tomate </li>
+        <li> 4 pacotes de Massa para lasanha </li>
+        <li> 500g de queijo </li>
+        <li> 500g de presunto </li>
+        <li> 1 potinho de requeijão </li>
+        <li> 1 cebola </li>
+        <li> 1 tomate </li>
+        <li> 2 alhos </li>
+        <li> orégano e pimenta à gosto</li>
+    </ul>
+    <h2><u> Modo de Preparo </u></h2>
+    <!--Lista ordenada-->
+    <ol>
+        <li> Corte e refogue a cebola, o alho e tomate.</li>
+        <li> Adicione o molho de tomate às verduras refogadas. </li>
+        <li> Tempere o molho com sal, pimenta e outros tempeiros da sua escolha, como açafrão, por exemplo.</li>
+        <li> Quando o molho estiver finalizando, comece a montar a sua lasanha. A primeira camada deve ser <br> de molho
+        para evitar que a lasanha grude no fundo do refratário. Em seguida, coloque uma camada da massa, <br> outra de queijo
+        e presunto e assim por diante.</li>
+        <li> Por fim, adicione o requeijão e o queijo por cima, orégano e coloque no forno para assar por volta de 20 minutos</li>
+    </ol>
+    
+    <hr>
+    
+    <h3><u> Outras Possibilidades </u></h3>
+    <!--Lista de definição-->
+    <dl>
+        <dt> Lasanha de Queijo e Carne</dt>
+        <dd>
+            Para fazer essa deliciosa lasanha, você precisará alterar apenas alguns ingredientes. Tempere a <br>
+            a carne, de preferência moida, à gosto e adione-a no lugar do presunto.
+        </dd>
+        <dt> Lasanha de Abobrinha</dt>
+        <dd> Já para fazer essa opção low carb, basta apenas substituir a massa tradicional de lasanha por finas <br>
+        lâminas de abobrinha.</dd>
+        <dd> Fica uma delícia!</dd>
+    </dl>
+
+    <!--Tabela-->
+    <table border = "3">
+        <tr> <!--Início da linha do cabeçalho-->
+            <th> Lasanhas Vegetarianas</th>
+            <th> Lasanhas Veganas </th>
+        </tr>
+        <tr> <!--Início da primeira linha de ambas colunas-->
+            <td> Lasanha de Cogumelos e Queijo </td>
+            <td> Lasanha de Queijo de Castanha e Soja</td>
+        </tr>
+        <tr> <!--Início da segunda linha de ambas colunas-->
+            <td> Lasanha de 4 Queijos </td>
+            <td> Lasanha de Pesto com Queijo de Castanha</td>
+        </tr>
+
+    </table>
+    <br>
+    
+    <!--Formulário-->
+
+    <fieldset>
+        <legend> Agora, deixa eu ouvir de você! </legend>
+        <h4><em> Qual das receitas você mais gostou? </em></h4>
+        
+        <form> <!--Escolher apenas uma das opções pré-definidas-->
+            <p>Lasanha de Queijo e Presunto</p>
+            <input type = "radio" name = "tipos" value = "queijoepresunto">
+            <p>Lasanha de Queijo e Carne</p>
+            <input type = "radio" name = "tipos" value = "queijoecarne">
+            <p>Lasanha de Queijo e Cogumelos</p>
+            <input type = "radio" name = "tipos" value = "queijoecogumelos">
+            <p>Lasanha de Abobrinha</p>
+            <input type = "radio" name = "tipos" value = "abobrinha">
+        </form>
+        
+        <form> <!--Escolher várias ou nenhuma opção-->
+            <br>
+            <div><strong><em>Dentre elas, quais são as suas preferidas?</strong></em></div>
+            <br>
+            <input type = "checkbox" name = "favs" value = "1"> Lasanha de Queijo e Presunto <br>
+            <input type = "checkbox" name = "favs" value = "1"> Lasanha de Queijo e Carne <br>
+            <input type = "checkbox" name = "favs" value = "1"> Lasanha de Queijo e Cogumelos <br>
+            <input type = "checkbox" name = "favs" value = "1"> Lasanha de Abobrinha <br>
+        
+        </form>
+
+        <h4><em> Você provaria as lasanhas vegetarianas ou veganas?</em></h4>
+        
+        <form> <!--Escolher apenas uma das opções pré-definidas lado a lado-->
+            <input type = "radio" name = "vegs" value = "sim"> Sim!
+            <input type = "radio" name = "vegs" value = "sim"> No, thanks :)
+        </form>
+
+        <h4><em> Você provaria lasanhas low carb?</em></h4>
+        
+        <form> <!--Escolher apenas uma das opções pré-definidas uma em cima da outra-->
+            <input type = "radio" name = "lowcarb" value = "sim"> Sim! <br>
+            <input type = "radio" name = "lowcarb" value = "nao"> No, thanks :)
+        </form>
+
+        <h4><em> Qual das receitas a seguir você gostaria de ver no site?</em></h4>
+        <select name = "novasreceitas"> <!--Menu pré-definido. Apenas uma escolha-->
+            <option value="camarão"> Camarão </option>
+            <option value="frango"> Frango </option>
+            <option value="berinjela"> Berinjela </option>
+        </select>
+        <br><br>
+        <label for = "nome"> Nome: </label>
+        <input type = "text" name = "nome" placeholder = "Digite o seu nome"> <!--Espaço para o usuário digitar uma linha de texto-->
+        <br><br>
+        <label> Habla más:</label> <br> <!--Espaço para o usuário digitar mais de uma linha-->
+        <textarea></textarea>
+    </fieldset>
+    
+    <hr>
+
+    <fieldset>
+        <legend> Informações Pessoais: </legend>
+        <p> Gênero</p>
+        <form>
+            <input type = "radio" name = "genero" value = "feminino"> Feminino
+            <input type = "radio" name = "genero" value = "masculino"> Masculino
+            <input type = "radio" name = "genero" value = "outro"> Outro
+        </form>
+        <br>
+        <label for = "nome"> Nome: </label>
+        <input type = "text" name = "nome" placeholder = "Digite o seu nome">
+        <br>
+        <label for = "sobrenome"> Sobrenome: </label>
+        <input type = "text" name = "sobrenome" placeholder = "Digite o seu sobrenome">
+        <br><br>
+        <form>
+            <label>Tamanhos:</lable>
+            <select name = "tamanhos">
+                <option value="p"> P </option>
+                <option value="m"> M </option>
+                <option value="g"> G </option>
+            </select>
+        </form>
+        <br><br>
+        <button type = "submit">
+            Enviar
+        </button>
+    </fieldset>
+</body>
+</html>
